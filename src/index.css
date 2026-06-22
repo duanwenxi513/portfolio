@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #07070c;
+    color: #d4d4d8;
+    font-family: "Outfit", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: rgba(212, 175, 55, 0.3);
+    color: #fff;
+  }
+}
+
+@layer utilities {
+  /* 鎏金暖色渐变 */
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #d4af37 0%, #f0c060 30%, #fde68a 55%, #f59e2e 100%);
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    display: inline-block !important;
+  }
+
+  /* 银白月光渐变 */
+  .text-gradient-moon {
+    background: linear-gradient(135deg, #c0c0c0 0%, #e8e8e8 30%, #f5f5f5 55%, #d4af37 100%);
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    display: inline-block !important;
+  }
+
+  /* 暖橙渐变 */
+  .text-gradient-warm {
+    background: linear-gradient(135deg, #f59e2e 0%, #f97316 40%, #fb923c 70%, #fdba74 100%);
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    display: inline-block !important;
+  }
+
+  /* 玫瑰金渐变 */
+  .text-gradient-rosegold {
+    background: linear-gradient(135deg, #e8a87c 0%, #d4af37 40%, #f0c060 70%, #fde68a 100%);
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+  }
+
+  .glow-gold {
+    box-shadow: 0 0 40px rgba(212, 175, 55, 0.15), 0 0 80px rgba(212, 175, 55, 0.05);
+  }
+
+  .glow-amber {
+    box-shadow: 0 0 40px rgba(245, 158, 46, 0.12), 0 0 80px rgba(245, 158, 46, 0.04);
+  }
+
+  .border-glow {
+    border: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .border-glow-hover:hover {
+    border-color: rgba(255, 255, 255, 0.12);
+  }
+
+  .bg-glass {
+    background: rgba(14, 15, 22, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+}
