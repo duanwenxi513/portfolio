@@ -65,7 +65,7 @@ export function BackgroundProvider({ children }) {
         ref={heroPhotoRef}
         className="pointer-events-none fixed inset-0 z-[2] bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('/bg.jpg')",
+          backgroundImage: `url('${import.meta.env.BASE_URL}bg.jpg')`,
           opacity: 1,
           filter: "saturate(1.08) brightness(0.85) contrast(1.05)",
           transition: "opacity 1s ease-out",
